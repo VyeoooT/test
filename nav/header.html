@@ -1,0 +1,182 @@
+<!-- desktop -->
+<div class="hidden md:flex flex-col items-center">
+    <div class="flex items-center justify-center gap-20 py-6 max-w-7xl bg-white">
+        <div>
+            <img src="../assets/logo.png" alt="Logo">
+        </div>
+        <div class="relative flex items-center justify-between">
+            <input type="text" class="w-72 border-2 py-2 rounded-full" placeholder="Tìm kiếm sản phẩm..." value="">
+            <img class="absolute top-2 right-3" src="../assets/icons/Search.png" alt="icon-search">
+        </div>
+        <div class="flex gap-10">
+            <div class="flex flex-col items-center gap-1">
+                <img class="w-7" src="../assets/icons/Buildings_1.png" alt="Buildings_1">
+                <p class="text-[1.125rem] font-medium">Giới thiệu</p>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+                <img src="../assets/icons/Buildings_2.png" alt="Buildings_2">
+                <p class="text-[1.125rem] font-medium">Dự án</p>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+                <img src="../assets/icons/Buildings_3.svg" alt="Buildings_3">
+                <p class="text-[1.125rem] font-medium">Catalogue</p>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+                <img src="../assets/icons/Buildings_4.png" alt="Buildings_4">
+                <p class="text-[1.125rem] font-medium">Tin tức</p>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+                <img src="../assets/icons/Buildings_5.png" alt="Buildings_5">
+                <p class="text-[1.125rem] font-medium">Liên hệ</p>
+            </div>
+        </div>
+        <div class="flex flex-col gap-1">
+            <img class="w-7" src="../assets/flat_vn.png" alt="flat_vn">
+            <div class="flex items-center gap-1">
+                <p class="text-base font-medium">VN</p>
+                <img class="size-4" src="../assets/icons/CaretDown.png" alt="CaretDown">
+            </div>
+        </div>
+    </div>
+    <div class="hidden w-full md:flex justify-center bg-[#494949] gap-16">
+        <img class="flex items-center justify-center px-7 py-3 bg-[#808080]" src="../assets/icons/Home.png" alt="home icon">
+        <div class="flex items-center gap-7 *:px-7 last:*:pr-0">
+            <p class="text-[1.125rem] text-white font-medium">Phào chỉ PS</p>
+            <p class="text-[1.125rem] text-white font-medium">Thanh lam sóng</p>
+            <p class="text-[1.125rem] text-white font-medium">Tấm ốp tường</p>
+            <p class="text-[1.125rem] text-white font-medium">Gỗ nhựa ngoài trời</p>
+            <p class="text-[1.125rem] text-white font-medium">Hệ thống nhà thông minh</p>
+        </div>
+    </div>
+</div>
+
+<!-- mobile -->
+<!-- <div>
+    <i class="fa-solid fa-bars"></i>
+</div>
+
+<div class="md:hidden flex flex-col bg-white px-20 shadow-sm shadow-gray-400">
+    <div>
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div>
+        <div class="flex justify-center mt-10 mb-5 py-2">
+            <img src="../assets/logo.png" alt="Logo">
+        </div>
+        <div class="flex items-center gap-10">
+            <div class="relative flex items-center justify-between">
+                <input type="text" class="w-48 border-2 py-2 rounded-full" placeholder="Tìm kiếm..." value="">
+                <img class="absolute top-2 right-3" src="../assets/icons/Search.png" alt="icon-search">
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="w-7" src="../assets/flat_vn.png" alt="flat_vn">
+                <div class="flex items-center gap-1">
+                    <p class="text-base font-medium">VN</p>
+                    <img class="size-4" src="../assets/icons/CaretDown.png" alt="CaretDown">
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-10 py-10">
+            <a href="#" class="flex items-center gap-5">
+                <img class="w-7" src="../assets/icons/Buildings_1.png" alt="Buildings_1">
+                <p class="text-[1.125rem] font-medium">Giới thiệu</p>
+            </a>
+            <a href="#" class="flex items-center gap-5">
+                <img src="../assets/icons/Buildings_2.png" alt="Buildings_2">
+                <p class="text-[1.125rem] font-medium">Dự án</p>
+            </a>
+            <a href="#" class="flex items-center gap-5">
+                <img src="../assets/icons/Buildings_3.svg" alt="Buildings_3">
+                <p class="text-[1.125rem] font-medium">Catalogue</p>
+            </a>
+            <a href="#" class="flex items-center gap-5">
+                <img src="../assets/icons/Buildings_4.png" alt="Buildings_4">
+                <p class="text-[1.125rem] font-medium">Tin tức</p>
+            </a>
+            <a href="#" class="flex items-center gap-5">
+                <img src="../assets/icons/Buildings_5.png" alt="Buildings_5">
+                <p class="text-[1.125rem] font-medium">Liên hệ</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="relative flex flex-col justify-center gap-16">
+        <button id="dropdownButton" class="px-7 py-3 bg-[#808080] text-white">
+            <i class="fa-solid fa-bars"></i> Menu
+        </button>
+        <div id="dropdownMenu" class="hidden flex flex-col gap-7 mt-2 px-7">
+            <a href="#" class="text-[1.125rem] font-medium">Phào chỉ PS</a>
+            <a href="#" class="text-[1.125rem] font-medium">Thanh lam sóng</a>
+            <a href="#" class="text-[1.125rem] font-medium">Tấm ốp tường</a>
+            <a href="#" class="text-[1.125rem] font-medium">Gỗ nhựa ngoài trời</a>
+            <a href="#" class="text-[1.125rem] font-medium">Hệ thống nhà thông minh</a>
+        </div>
+    </div>
+</div> -->
+
+<div id="menuIcon" class="hidden md:block cursor-pointer">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
+<div id="mobileMenu" class="md:hidden flex-col bg-white px-20 shadow-sm shadow-gray-400">
+    <div id="closeIcon" class="cursor-pointer">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <!-- block 1 -->
+    <div>
+        <div class="flex justify-center mt-10 mb-5 py-2">
+            <img src="../assets/logo.png" alt="Logo">
+        </div>
+        <div class="flex items-center gap-10">
+            <div class="relative flex items-center justify-between">
+                <input type="text" class="w-48 border-2 py-2 rounded-full" placeholder="Tìm kiếm..." value="">
+                <img class="absolute top-2 right-3" src="../assets/icons/Search.png" alt="icon-search">
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="w-7" src="../assets/flat_vn.png" alt="flat_vn">
+                <div class="flex items-center gap-1">
+                    <p class="text-base font-medium">VN</p>
+                    <img class="size-4" src="../assets/icons/CaretDown.png" alt="CaretDown">
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-10 py-10">
+            <a href="#" class="flex items-center gap-5">
+                <img class="w-7" src="../assets/icons/Buildings_1.png" alt="Buildings_1">
+                <p class="text-[1.125rem] font-medium">Giới thiệu</p>
+            </a>
+            <a href="#" class="flex items-center gap-5">
+                <img src="../assets/icons/Buildings_2.png" alt="Buildings_2">
+                <p class="text-[1.125rem] font-medium">Dự án</p>
+            </a>
+            <a href="#" class="flex items-center gap-5">
+                <img src="../assets/icons/Buildings_3.svg" alt="Buildings_3">
+                <p class="text-[1.125rem] font-medium">Catalogue</p>
+            </a>
+            <a href="#" class="flex items-center gap-5">
+                <img src="../assets/icons/Buildings_4.png" alt="Buildings_4">
+                <p class="text-[1.125rem] font-medium">Tin tức</p>
+            </a>
+            <a href="#" class="flex items-center gap-5">
+                <img src="../assets/icons/Buildings_5.png" alt="Buildings_5">
+                <p class="text-[1.125rem] font-medium">Liên hệ</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- block 2 -->
+    <div class="relative flex flex-col justify-center gap-16">
+        <button id="dropdownButton" class="px-7 py-3 bg-[#808080] text-white">
+            <i class="fa-solid fa-bars"></i> Menu
+        </button>
+        <div id="dropdownMenu" class="hidden flex flex-col gap-7 mt-2 px-7">
+            <a href="#" class="text-[1.125rem] font-medium">Phào chỉ PS</a>
+            <a href="#" class="text-[1.125rem] font-medium">Thanh lam sóng</a>
+            <a href="#" class="text-[1.125rem] font-medium">Tấm ốp tường</a>
+            <a href="#" class="text-[1.125rem] font-medium">Gỗ nhựa ngoài trời</a>
+            <a href="#" class="text-[1.125rem] font-medium">Hệ thống nhà thông minh</a>
+        </div>
+    </div>
+</div>
+
+

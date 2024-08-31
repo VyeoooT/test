@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <!-- <link rel="stylesheet" href="slick-themes.css"> -->
+        <link rel="stylesheet" href="./styles.css">
+        <title>Home | Phu Khang Gia</title>
+    </head>
+    <body>
+        <header id="header">
+            <div class="hidden lg:flex flex-col items-center bg-white">
+                <div class="flex items-center justify-center lg:gap-10 xl:gap-20 py-6 lg:mx-10 xl:mx-0 lg:max-w-7xl">
+                    <div>
+                        <img src="../assets/logo.png" alt="Logo">
+                    </div>
+                    <div class="relative flex items-center justify-between">
+                        <input type="text" class="w-72 border-2 py-2 rounded-full" placeholder="Tìm kiếm sản phẩm..." value="">
+                        <img class="absolute top-2 right-3" src="../assets/icons/Search.png" alt="icon-search">
+                    </div>
+                    <div class="flex gap-10">
+                        <div class="flex flex-col items-center gap-1">
+                            <img class="w-7" src="../assets/icons/Buildings_1.png" alt="Buildings_1">
+                            <p class="text-[1.125rem] font-medium">Giới thiệu</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="../assets/icons/Buildings_2.png" alt="Buildings_2">
+                            <p class="text-[1.125rem] font-medium">Dự án</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="../assets/icons/Buildings_3.svg" alt="Buildings_3">
+                            <p class="text-[1.125rem] font-medium">Catalogue</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="../assets/icons/Buildings_4.png" alt="Buildings_4">
+                            <p class="text-[1.125rem] font-medium">Tin tức</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="../assets/icons/Buildings_5.png" alt="Buildings_5">
+                            <p class="text-[1.125rem] font-medium">Liên hệ</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <img class="w-7" src="../assets/flat_vn.png" alt="flat_vn">
+                        <div class="flex items-center gap-1">
+                            <p class="text-base font-medium">VN</p>
+                            <img class="size-4" src="../assets/icons/CaretDown.png" alt="CaretDown">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center bg-[#494949] lg:gap-0 xl:gap-16 lg:mx-0">
+                    <div class="flex items-center justify-center px-7 py-3 bg-[#808080]">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="flex items-center lg:gap-0 xl:gap-7 *:px-7 *:py-3 last:*:pr-0">
+                        <a href="#" class="text-[1.125rem] text-white font-medium hover:bg-[#808080] transition duration-300">Phào chỉ PS</a>
+                        <a href="#" class="text-[1.125rem] text-white font-medium hover:bg-[#808080] transition duration-300">Thanh lam sóng</a>
+                        <a href="#" class="text-[1.125rem] text-white font-medium hover:bg-[#808080] transition duration-300">Tấm ốp tường</a>
+                        <a href="#" class="text-[1.125rem] text-white font-medium hover:bg-[#808080] transition duration-300">Gỗ nhựa ngoài trời</a>
+                        <a href="#" class="text-[1.125rem] text-white font-medium hover:bg-[#808080] transition duration-300">Hệ thống nhà thông minh</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile -->
+            <div id="menuIcon" class="lg:hidden block cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <div id="mobileMenu" class="lg:hidden hidden flex-col bg-white px-20 shadow-sm shadow-gray-400">
+                <div id="closeIcon" class="cursor-pointer">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <!-- block 1 -->
+                <div>
+                    <div class="flex justify-center mt-10 mb-5 py-2">
+                        <img src="../assets/logo.png" alt="Logo">
+                    </div>
+                    <div class="flex items-center gap-10">
+                        <div class="relative flex items-center justify-between">
+                            <input type="text" class="w-48 border-2 py-2 rounded-full" placeholder="Tìm kiếm..." value="">
+                            <img class="absolute top-2 right-3" src="../assets/icons/Search.png" alt="icon-search">
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img class="w-7" src="../assets/flat_vn.png" alt="flat_vn">
+                            <div class="flex items-center gap-1">
+                                <p class="text-base font-medium">VN</p>
+                                <img class="size-4" src="../assets/icons/CaretDown.png" alt="CaretDown">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-10 py-10">
+                        <a href="#" class="flex items-center gap-5">
+                            <img class="w-7" src="../assets/icons/Buildings_1.png" alt="Buildings_1">
+                            <p class="text-[1.125rem] font-medium">Giới thiệu</p>
+                        </a>
+                        <a href="#" class="flex items-center gap-5">
+                            <img src="../assets/icons/Buildings_2.png" alt="Buildings_2">
+                            <p class="text-[1.125rem] font-medium">Dự án</p>
+                        </a>
+                        <a href="#" class="flex items-center gap-5">
+                            <img src="../assets/icons/Buildings_3.svg" alt="Buildings_3">
+                            <p class="text-[1.125rem] font-medium">Catalogue</p>
+                        </a>
+                        <a href="#" class="flex items-center gap-5">
+                            <img src="../assets/icons/Buildings_4.png" alt="Buildings_4">
+                            <p class="text-[1.125rem] font-medium">Tin tức</p>
+                        </a>
+                        <a href="#" class="flex items-center gap-5">
+                            <img src="../assets/icons/Buildings_5.png" alt="Buildings_5">
+                            <p class="text-[1.125rem] font-medium">Liên hệ</p>
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- block 2 -->
+                <div class="relative flex flex-col justify-center gap-16">
+                    <button id="dropdownButton" class="px-7 py-3 bg-[#808080] text-white">
+                        <i class="fa-solid fa-bars"></i> Menu
+                    </button>
+                    <div id="dropdownMenu" class="hidden flex flex-col gap-7 mt-2 px-7">
+                        <a href="#" class="text-[1.125rem] font-medium">Phào chỉ PS</a>
+                        <a href="#" class="text-[1.125rem] font-medium">Thanh lam sóng</a>
+                        <a href="#" class="text-[1.125rem] font-medium">Tấm ốp tường</a>
+                        <a href="#" class="text-[1.125rem] font-medium">Gỗ nhựa ngoài trời</a>
+                        <a href="#" class="text-[1.125rem] font-medium">Hệ thống nhà thông minh</a>
+                    </div>
+                </div>
+            </div>            
+        </header>
+
+        <div class="relative">
+            <div class="*:text-white bg-[#4F0E0D] opacity-80 px-10 py-5 lg:py-10 lg:px-20 flex flex-col justify-center absolute lg:bottom-20 lg:left-32 bottom-10 left-10 z-10">
+                <p class="text-3 lg:text-5xl font-extrabold">PHU KHANG GIA CORP</p>
+                <p class="text-2 lg:text-3xl">Nhà phân phối sàn gỗ số 1</p>
+            </div>
+            <div class="slider">
+                <div class="slider-list">  
+                    <img src="../assets/images/image_1.png" alt="">
+                    <img src="../assets/images/image_1.png" alt="">
+                    <img src="../assets/images/image_1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <section id="about" class="pt-10 relative"></section>
+        <section id="interior" class="relative"></section>
+        <section id="smartHome"></section>
+        <section id="criteria"></section>
+        <section id="featuredProjects"></section>
+        <section id="news" class="relative"></section>
+        <section id="partner">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slider-inner">
+                        <img src="../assets/images/partner/partner_11.png" alt="">
+                        <img src="../assets/images/partner/partner_2.png" alt="">
+                        <img src="../assets/images/partner/partner_3.png" alt="">
+                        <img src="../assets/images/partner/partner_8.png" alt="">
+                        <img src="../assets/images/partner/partner_7.png" alt="">
+                        <img src="../assets/images/partner/partner_9.png" alt="">
+                        <img src="../assets/images/partner/partner_10.png" alt="">
+                    </div>
+                </div>
+            </div>                                 
+        </section>
+        <section id="media" class="relative"></section>
+        <section id="agency" class="relative"></section>
+        <footer id="footer" class="flex flex-col items-center justify-center"></footer>
+        <div class="fixed bottom-5 ld:right-20 right-5">
+            <a href="#" id="gotop" class="bg-red-500 shadow-lg hover:bg-red-700">
+                <img src="../assets/icons/backtotop.png" alt="">
+            </a>
+        </div>
+        <div class="fixed top-1/3 md:right-24 right-5 flex flex-col-reverse gap-1 md:gap-0">
+            <div id="contact-icons" class="hidden md:flex md:flex-col flex-row-reverse gap-1">
+                <a class="hover:bg-[#E4B477] rounded-full opacity-100 transition-all duration-300" href="#"><img src="./assets/contact/contact_1.png" alt=""></a>
+                <a class="hover:bg-[#E4B477] rounded-full opacity-100 transition-all duration-300" href="#"><img src="./assets/contact/contact_2.png" alt=""></a>
+                <a class="hover:bg-[#E4B477] rounded-full opacity-100 transition-all duration-300" href="#"><img src="./assets/contact/contact_3.png" alt=""></a>
+                <a class="hover:bg-[#E4B477] rounded-full opacity-100 transition-all duration-300" href="#"><img src="./assets/contact/contact_4.png" alt=""></a>
+            </div>
+            <button id="toggle-btn" class="md:hidden px-5 aspect-square bg-[#DA2826] text-white rounded-full">
+                <i id="toggle-icon" class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/slide.js"></script>
+        <script src="./js/partner.js"></script>
+    </body>
+</html>
